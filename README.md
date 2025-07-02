@@ -78,13 +78,13 @@ Open a terminal on VSCode and follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/jobigutenburg02/e-commerce-website-backend.git
+git clone https://github.com/jobigutenburg02/e-commerce-full-stack-app.git
 ```
 
 ### 2. Navigate into the backend folder
 
 ```bash
-cd e-commerce-website-backend
+cd e-commerce-full-stack-app/backend
 ```
 
 ### 3. Create a virtual environment and activate it
@@ -120,18 +120,13 @@ python manage.py runserver
 
 Open another terminal on VSCode and follow these steps:
 
-### 1. Clone the repository
+### 1. Navigate into the frontend directory from the backend directory
 
 ```bash
-git clone https://github.com/jobigutenburg02/e-commerce-website-frontend.git
+cd ../frontend
 ```
 
-### 2. Navigate into the project directory
-
-```bash
-cd e-commerce-website-frontend
-```
-### 3. Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
