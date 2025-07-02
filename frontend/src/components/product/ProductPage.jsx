@@ -13,7 +13,7 @@ const ProductPage = ({setNumCartItems}) => {
     const [product, setProduct] = useState({})
     const [similarProducts, setSimilarProducts] = useState([]) 
     const [loading, setLoading] = useState(true)
-    const [inCart, setInCart] = useState({})
+    const [inCart, setInCart] = useState(false)
 
     const cart_code = localStorage.getItem("cart_code")
 
@@ -32,7 +32,7 @@ const ProductPage = ({setNumCartItems}) => {
     },[cart_code, product.id])
 
     // Prepare new item object for adding to cart
-    const newItem = {cart_code: cart_code, product_id:product.id}
+    const newItem = {cart_code: cart_code, product_id: product.id}
  
     // Function to add the product to the cart
     function add_item(){
