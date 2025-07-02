@@ -132,13 +132,13 @@ cd ../frontend
 npm install
 ```
 
-### 4. Start the development server
+### 3. Start the development server
 
 ```bash
 npm run dev
 ```
 
-### 5. Open your browser and go to [http://localhost:5173](http://localhost:5173)
+### 4. Open your browser and go to [http://localhost:5173](http://localhost:5173)
 
 Once both the backend and frontend are running, you’ll be able to:
  - Browse products
