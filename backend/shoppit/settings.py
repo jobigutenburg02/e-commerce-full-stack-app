@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-smpjwp%6%frs2h-yd(5rb_ek=)hi(x#e^evvz(^v$@o_%5ssyo
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://jobijumart.onrender.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "jobijumart.onrender.com"]
 
 # Application definition
 
