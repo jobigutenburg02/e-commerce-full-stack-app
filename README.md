@@ -9,14 +9,14 @@
 
 - RESTful API endpoints for products, categories, and orders
 - JWT-based authentication for secure user login
-- Admin panel for managing data
+- Django Admin panel for managing data
 - Support for product images, pricing, and inventory
 - Implemented payment gateways using PayPal and Flutterwave APIs for seamless online transactions
 - Ready-to-use with React frontend
 
 ---
 
-## Setting up the secret keys for payment gateway
+## Setting up the secret keys for payment testing
 
 ### Flutterwave
 
@@ -41,7 +41,7 @@ Follow these steps to test payments using PayPal's sandbox environment
 - Get both client ID and secret key from **Apps & Credentials** section
 - Navigate to **Testing Tools > Sandbox Accounts**
 - Create a personal account for testing
-- Add the following to your backend .env file
+- Add the following to your backend .env file:
 
 ```bash
 PAYPAL_MODE=sandbox
@@ -52,6 +52,24 @@ PAYPAL_SECRET=your_sandbox_secret
 - Replace 'your_sandbox_client_id' with your client ID and 'your_sandbox_secret' with your secret key
 
 ---
+
+## Setting up the Environment Variables
+
+In backend, your .env file should look like this:
+
+```bash
+FLUTTERWAVE_SECRET_KEY=your_secret_key
+PAYPAL_CLIENT_ID=your_sandbox_client_id
+PAYPAL_CLIENT_SECRET=your_sandbox_secret
+PAYPAL_MODE=sandbox
+REACT_BASE_URL=http://localhost:5173
+```
+
+In frontend, your .env file should look like this:
+
+```bash
+VITE_BASE_URL=http://localhost:8000
+```
 
 ## Running the Backend
 
