@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-smpjwp%6%frs2h-yd(5rb_ek=)hi(x#e^evvz(^v$@o_%5ssyo
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["my-e-commerce-website.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -56,7 +56,6 @@ CORS_ALLOWED_ORIGINS = [
 "http://localhost:5173",
 "http://localhost:5174",
 "http://localhost:5175",
-"https://my-e-commerce-app-3vaq.onrender.com"
 ]
 
 ROOT_URLCONF = 'shoppit.urls'
@@ -155,11 +154,3 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
 }
-
-FLUTTERWAVE_SECRET_KEY = "FLWSECK_TEST-0cc75db887ba63cec6364abe42a85823-X"
-
-PAYPAL_CLIENT_ID = 'AfO9bo2ZumQnxqPYPpIvGGIKmUHeO5agGBOjrTvMEqGki3Z98vAiX1PB3yJNQHl3BvcJuL0j_230IkoR'
-PAYPAL_CLIENT_SECRET = 'EH4Rp567DzjrI7bQqP7c-ieanU70bBPBQz_JBgUJ9gvqcmjhOp3IvX8ifmjyXsAQ5Fcq24lQmM6WmXYg'
-PAYPAL_MODE = 'sandbox'
-
-REACT_BASE_URL = os.getenv("REACT_BASE_URL", "http://localhost:5173")
