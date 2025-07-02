@@ -12,7 +12,7 @@ const ProductPage = ({setNumCartItems}) => {
     
     const [product, setProduct] = useState({})
     const [similarProducts, setSimilarProducts] = useState([]) 
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [inCart, setInCart] = useState({})
 
     const cart_code = localStorage.getItem("cart_code")
@@ -50,7 +50,6 @@ const ProductPage = ({setNumCartItems}) => {
 
     // Fetch product details and similar products when slug changes
     useEffect(function(){
-        setLoading(true)
         api.get(`product_detail/${slug}`)
         .then(res => {
             console.log(res.data)
@@ -58,7 +57,6 @@ const ProductPage = ({setNumCartItems}) => {
             setSimilarProducts(res.data.similar_products)
             setLoading(false)
         })
-
         .catch(err => {
             console.log(err.message)
             setLoading(false)
