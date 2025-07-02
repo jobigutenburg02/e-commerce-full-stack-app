@@ -8,18 +8,20 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 from decimal import Decimal
-from django.conf import settings
+import os
+from dotenv import load_dotenv
+
 import requests
 import uuid
 import paypalrestsdk
 from django.conf import settings
 
-BASE_URL = settings.REACT_BASE_URL # frontend base url
+BASE_URL = os.getenv("REACT_BASE_URL") # frontend base url
 
 paypalrestsdk.configure({
-    "mode": settings.PAYPAL_MODE,
-    "client_id": settings.PAYPAL_CLIENT_ID,
-    "client_secret": settings.PAYPAL_CLIENT_SECRET
+    "mode":  os.getenv("PAYPAL_MODE"),
+    "client_id":  os.getenv("PAYPAL_CLIENT_ID"),
+    "client_secret":  os.getenv("PAYPAL_CLIENT_SECRET")
 })
 
 @api_view(["GET"])
