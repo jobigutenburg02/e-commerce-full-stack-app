@@ -1,7 +1,7 @@
 ## Tech Stack Used
 
-**Backend:** Django, Django REST Framework (DRF), SQLite3
-**Frontend:** React, Vite
+- **Backend:** Django, Django REST Framework (DRF), SQLite3
+- **Frontend:** React, Vite
 
 ---
 
