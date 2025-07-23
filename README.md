@@ -1,7 +1,7 @@
 ## Tech Stack Used
 
-- The backend is built using **Django**, with the API implemented using the **Django REST Framework (DRF)**, and it provides a robust interface for managing products, users, orders, and shopping cart functionality. It also uses **SQLite3**, Django’s default lightweight database, suitable for development and testing. 
-- The frontend is built using **React** with **Vite** tool, and it provides a fast, responsive, and modern user interface for browsing products, adding them to cart, and placing orders.
+**Backend:** Django, Django REST Framework (DRF), SQLite3
+**Frontend:** React, Vite
 
 ---
 
