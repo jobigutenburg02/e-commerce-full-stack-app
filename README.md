@@ -12,7 +12,6 @@
 - Django Admin panel for managing data
 - Support for product images, pricing, and inventory
 - Implemented payment gateways using PayPal and Flutterwave APIs for seamless online transactions
-- Ready-to-use with React frontend
 
 ---
 
