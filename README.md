@@ -203,4 +203,4 @@ Below is a list of available endpoints for interacting with the backend.
 
 For support and questions:
 - Create an issue in the repository
-- Contact: jbros2513@gmail.com
+- Contact: johanbiju02@gmail.com
